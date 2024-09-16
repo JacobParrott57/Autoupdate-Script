@@ -24,6 +24,11 @@ echo 'running upgrade...'
 sudo apt-get -qq upgrade -y
 echo
 echo done..
+echo 'removing and cleaning extras...'
+sudo apt autoremove -y
+sudo apt autoclean -y
+echo
+echo done..
 echo
 #after install stuff, thx ezra
 echo "What do you want to do now?"
